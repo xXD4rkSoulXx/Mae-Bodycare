@@ -1,0 +1,147 @@
+nav {
+  width: 100vw;
+  height: 8vw;
+  position: Fixed;
+  z-index: 1;
+  color: White;
+}
+
+nav img {
+  width: 8.3vw;
+  height: Auto; 
+  position: Absolute;
+  top: 1vw;
+  left: 4.8vw;
+}
+
+nav img.logo-tablet-mobile {
+  display: None;
+}
+
+nav .open-menu {
+  display: None;
+}
+
+nav ul {
+  list-style-type: None;
+  width: 19.2vw;
+  height: 3.5vw;
+  position: Absolute;
+  top: 2.6vw;
+  right: 0;
+  background-color: #19272D;
+  display: Flex;
+  flex-direction: Row;
+  justify-content: Space-Evenly;
+  align-items: Center;
+}
+
+nav ul li {
+  font-weight: 500;
+  font-size: 0.9vw;
+  text-transform: UpperCase;
+}
+
+nav ul li.close-menu {
+  display: None;
+}
+
+nav ul li a {
+  text-decoration: None;
+  color: White;
+}
+
+nav ul li a:hover {
+  cursor: Pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+	background-color: #19272D;	
+  }
+  
+  nav img.logo-pc {
+	display: None;
+  }
+  
+  nav img.logo-tablet-mobile {
+	display: Block;
+  }
+  
+  nav ul {
+	width: 42.2vw;
+  }
+  
+  nav ul li {
+	font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  nav {
+	background-color: Transparent;
+	position: Absolute;
+  }
+  
+  nav .logo-zone {
+	width: 26vw;
+	height: 26vw;
+	margin: 9.2vw;
+	border-radius: 100%;
+	background-color: #192327;
+  }
+  
+  nav img {
+	width: 18.3vw;
+	top: 15vw;
+	left: 13.2vw;
+  }
+  
+  nav .open-menu {
+    display: Block;
+	width: 9.2vw;
+	height: 9.2vw;
+	position: Fixed;
+	top: 5vw;
+	right: 5vw;
+	padding: 2vw 2.8vw;
+	font-size: 4.3vw;
+	border-radius: 100%;
+	background-color: #192327;
+  }
+  
+  nav .menu-zone {
+	display: None;
+	position: Fixed;
+	top: 3.3vw;
+	right: 5vw;
+  }
+  
+  nav ul {
+	width: 45.8vw;
+	height: 39vw;
+	top: 0vw;
+	right: 0vw;
+	border-radius: 4.6vw;
+	flex-direction: Column;
+	justify-content: Center;
+	align-items: Center;
+	gap: 2vw;
+  }
+  
+  nav ul li {
+	font-size: 4.6vw;
+  }
+  
+  nav ul li.close-menu {
+    display: Block;
+	position: Absolute;
+	top: 3vw;
+	right: 3vw;
+    align-self: Flex-End;
+  }
+  
+  nav ul li.separator {
+    rotate: 90deg;
+  }
+}

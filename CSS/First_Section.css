@@ -1,0 +1,67 @@
+.first-section {
+  width: 100vw;
+  height: 56.3vw;
+  background: Url(../Images/Wallpaper1.png);
+  background-size: Cover;
+  background-position: Center;
+  overflow-y: Hidden;
+  color: White;
+}
+
+.first-section h2 {
+  width: 34.8vw;
+  margin-top: 10.4vw;
+  margin-left: 4.2vw;
+  font-weight: 700;
+  font-size: 4.7vw;
+  letter-spacing: -0.14vw;
+  text-transform: UpperCase;
+}
+
+.first-section p {
+  width: 20.4vw;
+  margin-top: 6vw;
+  margin-left: 4.2vw;
+  font-weight: 300;
+  font-size: 2.6vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-section {
+	height: 144vw;
+	background: Url(../Images/Wallpaper1_Mobile.png);
+	background-size: Cover;
+	background-position: Center;
+  }
+  
+  .first-section h2 {
+	width: 64.1vw;
+	margin-top: 17vw;
+    margin-left: 9vw;
+	font-size: 9.3vw;
+	letter-spacing: -0.3vw;
+  }
+  
+  .first-section p {
+	width: 35vw;
+    margin-left: 9vw;
+	font-size: 4.4vw;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .first-section {
+    height: 216.8vw;
+  }
+  
+  .first-section h2 {
+	width: 82.7vw;
+	margin-top: 38.4vw;
+	font-size: 12vw;
+  }
+  
+  .first-section p {
+	width: 61vw;
+	font-size: 7.6vw;
+  }
+}

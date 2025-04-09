@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: Border-Box;
+  font-family: 'Raleway', Arial;
+}
+
+html {
+  scroll-behavior: Smooth;
+}
+
+body {
+  background-image: Linear-Gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
+}
+
+body::-webkit-scrollbar {
+  display: None;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gotham', Arial;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5.2vw;
+  letter-spacing: -0.16vw;
+  color: #2E606F;
+  text-transform: LowerCase;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+	font-size: 7.4vw;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  h1 {
+	font-size: 10.2vw;
+  }
+}

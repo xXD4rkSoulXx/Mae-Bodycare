@@ -1,0 +1,167 @@
+.third-section {
+  width: 100vw;
+  height: 105.2vw;
+  background: Url(../Images/Wallpaper2.png);
+  background-size: Cover;
+  background-position: Center;
+}
+
+.third-section article {
+  background-color: White;
+  width: 33vw;
+  height: 33vw;
+  margin-top: 7.3vw;
+  margin-left: 49.3vw;
+  padding: 3.5vw 2.8vw;
+  display: Flex;
+  flex-direction: Column;
+  justify-content: Space-Evenly;
+}
+
+.third-section h4 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: -0.04vw;
+}
+
+.third-section .price-weight {
+  display: Flex;
+  flex-direction: Row;
+  align-items: Flex-End;
+  gap: 1.5vw;
+}
+
+.third-section h3 {
+  font-size: 2.1vw;
+  font-weight: 900;
+  letter-spacing: -0.06vw;
+}
+
+.third-section h6 {
+  font-size: 1.3vw;
+  font-weight: 300;
+  letter-spacing: -0.04vw;
+}
+
+.third-section .extra-info {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.third-section .item-kit {
+  border-bottom: 1px Solid Black;
+  display: Flex;
+  flex-direction: Row;
+  justify-content: Space-Between;
+}
+
+.third-section .item-kit:hover{
+  cursor: Pointer;
+}
+
+.third-section .item-kit p {
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.third-section .item-kit .plus-minus {
+  font-size: 1.5vw;
+}
+
+.third-section .ingredients {
+  display: None;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .third-section {
+	margin-top: 47.3vw;
+  }	
+  
+  .third-section article {
+	position: Absolute;
+	width: 64vw;
+	height: 64vw;
+	top: 536.6vw;
+	right: 12.6vw;
+	padding: 5vw 4.1vw;
+  }
+  
+  .third-section h4 {
+    font-size: 3.4vw;
+  }
+  
+  .third-section .price-weight {
+    gap: 3.4vw;
+  }
+  
+  .third-section h3 {
+    font-size: 4vw;
+  }
+  
+  .third-section h6 {
+    font-size: 2.3vw;
+  }
+  
+  .third-section .extra-info {
+    font-size: 2.4vw;
+  }
+  
+  .third-section .item-kit p {
+	font-size: 1.8vw;
+  }
+  
+  .third-section .item-kit .plus-minus {
+	font-size: 2.9vw;
+  }
+  
+  .third-section .ingredients {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .third-section {
+	margin-top: 82.8vw;
+	height: 123.8vw;
+  }
+  
+  .third-section article {
+	width: 85.3vw;
+	height: 106.5vw;
+	top: 990vw;
+	right: 6vw;
+	padding: 6.5vw;
+  }
+  
+  .third-section h4 {
+    font-size: 5vw;
+  }
+  
+  .third-section h3 {
+    font-size: 5.3vw;
+  }
+  
+  .third-section h6 {
+    font-size: 4vw;
+  }
+  
+  .third-section .extra-info {
+    font-size: 3.6vw;
+	color: #A0A0A0;
+  }
+  
+  .third-section .item-kit p {
+	font-size: 3.6vw;
+  }
+  
+  .third-section .item-kit .plus-minus {
+	font-size: 5.5vw;
+  }
+  
+  .third-section .ingredients {
+    font-size: 3.6vw;
+  }
+}

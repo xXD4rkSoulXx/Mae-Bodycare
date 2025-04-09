@@ -1,0 +1,62 @@
+.forth-section h1 {
+  position: Absolute;
+  top: 287vw;
+  left: 4.8vw;
+}
+
+.forth-section .products-list {
+  margin-top: 4.7vw;
+  margin-left: 5.1vw;
+  display: Flex;
+  flex-diretion: Row;
+  flex-wrap: Wrap;
+  gap: 2.2vw;
+}
+
+.forth-section img {
+  width: 20.8vw;
+  height: Auto;
+}
+
+.forth-section p {
+  font-size: 0.8vw;
+  position: Relative;
+  left: 1vw;
+  bottom: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .forth-section h1 {
+	top: 669vw;
+  }
+  
+  .forth-section .products-list {
+    margin-top: 11.8vw;
+  }
+  
+  .forth-section img {
+    width: 28.4vw;
+  }
+  
+  .forth-section p {
+	font-size: 1.4vw;
+	bottom: 3vw;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .forth-section h1 {
+	top: 1185vw;
+  }
+  
+  .forth-section img {
+    width: 43.5vw;
+  }
+  
+  .forth-section p {
+	width: 42vw; 
+	font-weight: 500;
+	font-size: 3vw;
+	bottom: 6vw;
+  }
+}
