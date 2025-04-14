@@ -4,6 +4,7 @@
 <head>
 	<title>MÃE BODYCARE</title>
 	<link rel="icon" type="image/x-icon" href="./Images/Logo.png">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -139,7 +140,7 @@
 		</section>
 		<section class="third-section">
 			<div class="area">
-				<article id="thirdSection">
+				<article>
 					<h4>Kit Miniaturas Sabonetes Clássicos</h4>
 					<div class="price-weight">
 						<h3>35,00€</h3>
@@ -149,11 +150,11 @@
 						sabonete!</p>
 					<div>
 						<div class="dropdown">
-							<div id="item1" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Chá Verde e Sândalo</p>
-								<span id="plusMinus1" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient1" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -165,11 +166,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item2" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Mel e Cera de Abelhas</p>
-								<span id="plusMinus2" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient2" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -181,11 +182,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item3" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Tangerina e Cardamomo</p>
-								<span id="plusMinus3" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient3" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -197,11 +198,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item4" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Groselha Preta e Folha de Tomate</p>
-								<span id="plusMinus4" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient4" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -213,11 +214,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item5" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Peónia e Neroli</p>
-								<span id="plusMinus5" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient5" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -229,11 +230,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item6" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Alfazema e Erva Príncipe</p>
-								<span id="plusMinus6" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient6" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -245,11 +246,11 @@
 						</div>
 
 						<div class="dropdown">
-							<div id="item7" class="item-kit dropdown-clicked">
+							<div class="item-kit dropdown-clicked">
 								<p>Sabonete de Chá Verde e Sândalo</p>
-								<span id="plusMinus7" class="plus-minus">+</span>
+								<span class="plus-minus">+</span>
 							</div>
-							<p id="ingredient7" class="ingredients">
+							<p class="ingredients">
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
 								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
 								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -434,12 +435,11 @@
 			<div id="contactForm" class="contact-form-container">
 				<div class="contact-form">
 					<h6>Contacte-nos</h6>
-					<form action="#" method="POST">
+					<form name="contactForm" action="./PHP/contacts.php" method="POST">
 						<input type="Text" name="name" placeholder="Nome" required>
-						<input type="Email" name="email" placeholder="Email" required>
-						<input type="Number" name="phoneNumber" placeholder="Telefone" min="100000000" max="999999999"
-							required>
-						<textarea name="mensage" placeholder="Mensagem" required></textarea>
+						<input type="Email" name="email" placeholder="Email" pattern="[a-z0-9\.\-_]+@[a-z\.\-]+\.[a-z]{2,4}" required>
+						<input type="Text" name="phoneNumber" class="phoneNumber" placeholder="Telefone" minlenght="100000000" maxlenght="999999999" pattern="9[1236][0-9]{7}" required>
+						<textarea name="mensage" placeholder="Mensagem" maxlength="1000" required></textarea>
 						<button type="Submit">Enviar</button>
 					</form>
 				</div>
