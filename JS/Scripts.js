@@ -1,6 +1,11 @@
 window.addEventListener("load", function () {
-	let clicked = false;
 	var dropdown_clicked = document.querySelectorAll('.dropdown .dropdown-clicked');
+    var contactButton = document.querySelector(".contact");
+	var contactFormContainer = document.querySelector('.contact-form-container');
+	var contactForm = document.querySelector('.contact-form');
+	var openMenu = document.querySelector(".open-menu");
+	var menuZone = document.querySelector(".menu-zone");
+	var closeMenu = document.querySelector(".close-menu");
 
 	dropdown_clicked.forEach(element => {
 		element.addEventListener('click', function () {
@@ -8,34 +13,22 @@ window.addEventListener("load", function () {
 		});
 	});
 	
-	document.getElementById("contact").addEventListener("click", function () {
-		if (!clicked) {
-			document.getElementById("contactForm").style.display = "Flex";
-			document.body.style.overflow = "Hidden";
-			clicked = true;
-		} else {
-			document.getElementById("contactForm").style.display = "None";
-			document.body.style.overflow = "Auto";
-			clicked = false;
-		}
+	contactButton.addEventListener("click", function () {
+	  contactFormContainer.classList.toggle("show-form");
 	});
 
 	window.addEventListener("click", function (e) {
-		if (clicked) {
-			if (document.getElementById("contactForm").contains(e.target) && !document.querySelectorAll('.contact-form')[0].contains(e.target)) {
-				document.getElementById("contactForm").style.display = "None";
-				document.body.style.overflow = "Auto";
-				clicked = false;
-			}
-		}
+	  if(contactFormContainer.contains(e.target) && !contactForm.contains(e.target)) {
+	    contactFormContainer.classList.toggle("show-form");
+	  }
 	});
 
-	document.getElementById("openMenu").addEventListener("click", function () {
-		document.getElementById("menuZone").style.display = "Block";
+	openMenu.addEventListener("click", function () {
+	  menuZone.style.display = "Block";
 	});
 
-	document.getElementById("closeMenu").addEventListener("click", function () {
-		document.getElementById("menuZone").style.display = "None";
+	closeMenu.addEventListener("click", function () {
+	  menuZone.style.display = "None";
 	});
 });
 

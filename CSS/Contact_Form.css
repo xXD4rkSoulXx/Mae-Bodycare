@@ -11,6 +11,11 @@
   z-index: 50;
 }
 
+.show-form {
+  display: flex;
+  overflow: hidden;
+}
+
 .contact-form {
   width: 726px;
   height: 367px;
