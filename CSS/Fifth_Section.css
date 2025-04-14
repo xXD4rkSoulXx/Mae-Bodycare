@@ -30,6 +30,10 @@
   line-height: 2;
 }
 
+.fifth-section .dropdown .answer.dropdown-active {
+display: block;
+}
+
 .fifth-section .question .plus-minus {
   font-size: 30px;
 }

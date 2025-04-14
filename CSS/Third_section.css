@@ -70,6 +70,10 @@
   line-height: 1.5;
 }
 
+.third-section .dropdown .ingredients.dropdown-active {
+  display: block;
+  }
+
 .third-section .item-kit .plus-minus {
   font-size: 30px;
 }
