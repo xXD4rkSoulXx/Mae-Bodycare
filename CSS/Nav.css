@@ -1,17 +1,13 @@
 nav {
-  width: 100vw;
-  height: 8vw;
+  width: 100%;
+  padding-top: 20.51px;
+  padding-left: 100px;
   position: Fixed;
   z-index: 1;
   color: White;
-}
-
-nav img {
-  width: 8.3vw;
-  height: Auto; 
-  position: Absolute;
-  top: 1vw;
-  left: 4.8vw;
+  display: Flex;
+  justify-content: Space-Between;
+  align-items: Center;
 }
 
 nav img.logo-tablet-mobile {
@@ -24,21 +20,17 @@ nav .open-menu {
 
 nav ul {
   list-style-type: None;
-  width: 19.2vw;
-  height: 3.5vw;
-  position: Absolute;
-  top: 2.6vw;
-  right: 0;
+  width: 368px;
+  height: 67px;
   background-color: #19272D;
   display: Flex;
-  flex-direction: Row;
   justify-content: Space-Evenly;
   align-items: Center;
 }
 
 nav ul li {
   font-weight: 500;
-  font-size: 0.9vw;
+  font-size: 18px;
   text-transform: UpperCase;
 }
 
@@ -55,9 +47,27 @@ nav ul li a:hover {
   cursor: Pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1919px) {
+  nav img {
+	width: 100px;
+	height: Auto;
+  }
+  
+  nav ul {
+    width: 280px;
+    height: 50px;
+  }
+  
+  nav ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 949px) {
   nav {
-	background-color: #19272D;	
+	padding: 0 40px;
+	height: 80px;
+	background-color: #19272D;
   }
   
   nav img.logo-pc {
@@ -66,46 +76,47 @@ nav ul li a:hover {
   
   nav img.logo-tablet-mobile {
 	display: Block;
+	width: 70px;
+	height: Auto;
   }
   
   nav ul {
-	width: 42.2vw;
+	width: 300px;
+	justify-content: Center;
+    gap: 30px;
   }
   
   nav ul li {
-	font-size: 2.2vw;
+	font-size: 18px;
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 699px) {
   nav {
-	background-color: Transparent;
+	height: 200px;
 	position: Absolute;
+	padding: 24px;
+	background-color: Transparent;
   }
   
   nav .logo-zone {
-	width: 26vw;
-	height: 26vw;
-	margin: 9.2vw;
+	width: 102px;
+	height: 102px;
+	margin-top: -70px;
+	padding: 23px 16px;
 	border-radius: 100%;
 	background-color: #192327;
   }
   
-  nav img {
-	width: 18.3vw;
-	top: 15vw;
-	left: 13.2vw;
-  }
-  
   nav .open-menu {
     display: Block;
-	width: 9.2vw;
-	height: 9.2vw;
+	width: 36px;
+	height: 36px;
 	position: Fixed;
-	top: 5vw;
-	right: 5vw;
-	padding: 2vw 2.8vw;
-	font-size: 4.3vw;
+	top: 34px;
+	right: 21px;
+	padding: 9px 11px;
+	font-size: 16px;
 	border-radius: 100%;
 	background-color: #192327;
   }
@@ -113,31 +124,31 @@ nav ul li a:hover {
   nav .menu-zone {
 	display: None;
 	position: Fixed;
-	top: 3.3vw;
-	right: 5vw;
+	top: 34px;
+	right: 21px;
   }
   
   nav ul {
-	width: 45.8vw;
-	height: 39vw;
-	top: 0vw;
-	right: 0vw;
-	border-radius: 4.6vw;
+	width: 160px;
+	height: 160px;
+	top: 0px;
+	right: 0px;
+	border-radius: 18px;
 	flex-direction: Column;
 	justify-content: Center;
 	align-items: Center;
-	gap: 2vw;
+	gap: 10px;
   }
   
   nav ul li {
-	font-size: 4.6vw;
+	font-size: 18px;
   }
   
   nav ul li.close-menu {
     display: Block;
 	position: Absolute;
-	top: 3vw;
-	right: 3vw;
+	top: 10px;
+	right: 10px;
     align-self: Flex-End;
   }
   

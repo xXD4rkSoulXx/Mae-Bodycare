@@ -1,32 +1,37 @@
 .contact-form {
-  width: 37.8vw;
-  height: 20vw;
-  position: Absolute;
-  top: 350.5vw;
-  left: 31.1vw;
-  padding: 1.3vw 2vw;
-  border-radius: 0.7vw;
-  box-shadow: 0.7vw 0.7vw 0.7vw #00000029;
+  width: 726px;
+  height: 367px;
+  position: Fixed;
+  bottom: 300px;
+  left: 600px;
+  padding: 25px 40px;
+  border-radius: 13px;
+  box-shadow: 13px 13px 13px #00000029;
   background-color: White;
   display: None;
-  flex-direction: Row;
-  justify-content: Center;
+  flex-direction: Column;
   align-items: Center;
+  gap: 10px;
+}
+
+.contact-form form {
+  display: Flex;
   flex-wrap: Wrap;
+  align-items: Center;
+  gap: 10px;
 }
 
 .contact-form h6 {
   font-family: 'Raleway', Arial;
   font-weight: 700;
-  font-size: 1.25vw;
+  font-size: 24px;
   text-transform: UpperCase;
   color: #2F5462;
 }
 
 input, textarea {
-  margin: 0 0.5vw 0.5vw 0;
-  padding: 0.8vw 1vw;
-  font-size: 1vw;
+  padding: 16px;
+  font-size: 18px;
   border: None;
   background-color: #EAEAEA;
   color: #2E606F;
@@ -37,28 +42,28 @@ input::placeholder,  textarea::placeholder{
 }
 
 input[type=Text] {
-  width: 33.7vw;
-  height: 2.4vw;
+  width: 647px;
+  height: 47px;
 }
 
 input[type=Email], input[type=Number] {
-  width: 16.5vw;
-  height: 2.4vw;
+  width: 317px;
+  height: 47px;
 }
 
 textarea {
-  width: 33.7vw;
-  height: 5vw;
+  width: 647px;
+  height: 94px;
   resize: None;
 }
 
 button {
-  width: 5vw;
-  height: 1.8vw;
-  margin-left: 14.5vw;
-  font-size: 0.7vw;
+  width: 94px;
+  height: 34px;
+  margin: Auto;
+  font-size: 13px;
   text-transform: UpperCase;
-  border-radius: 1.25vw;
+  border-radius: 24px;
   background-color: #2E606F;
   color: #FCFCFC;
 }
@@ -67,88 +72,40 @@ button:hover {
   cursor: Pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1919px) {
   .contact-form {
-	width: 88.5vw;
-    height: 44.8vw;
-	top: 798vw;
-	left: 5.7vw;
-	padding: 3vw 5vw;
-	border-radius: 1.6vw;
-	box-shadow: 1.6vw 1.6vw 1.6vw #00000029;
-  }
-  
-  .contact-form h6 {
-	font-size: 3vw;
-  }
-  
-  input, textarea {
-	margin: 0 1.1vw 1.1vw 0;
-    padding-left: 2vw;
-    font-size: 2.2vw;
-  }
-  
-  input[type=Text] {
-	width: 79vw;
-    height: 5.7vw;
-  }
-
-  input[type=Email], input[type=Number] {
-	width: 38.7vw;
-    height: 5.7vw;
-  }
-
-  textarea {
-	width: 79vw;
-    height: 11.5vw;
-  }
-  
-  button {
-	width: 11.5vw;
-    height: 4.1vw;
-    margin-left: 33.4vw;
-    font-size: 1.7vw;
-	border-radius: 3vw;
+	bottom: 110px;
+	left: 200px;
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 949px) {
   .contact-form {
-	width: 89.6vw;
-    height: 109vw;
-	top: 1580vw;
-	left: 3.8vw;
-	padding: 6.4vw 10.2vw;
-	border-radius: 3.3vw;
-	box-shadow: 3.3vw 3.3vw 3.3vw #00000029;
+	width: 700px;
+	bottom: 100px;
+	left: 0px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .contact-form {
+	width: 352px;
+    height: 428px;
   }
   
-  .contact-form h6 {
-	margin-bottom: 2.5vw;
-	font-size: 6.1vw;
-	text-align: Center;
+  .contact-form form {
+    flex-wrap: No-Wrap;
+	justify-content: Center;
+    gap: 20px;
   }
   
   input[type=Text], input[type=Email], input[type=Number], textarea {
-	width: 69.5vw;
-	height: 9.4vw;
-	margin: 1.5vw 0vw;
-	padding-left: 3.8vw;
-	font-size: 3.6vw;
+	width: 273px;
+	height: 37px;
+	font-size: 14px;
   }
   
   textarea {
-	height: 24vw;
-	margin-top: 7vw;
-	padding-top: 2.5vw;
-  }
-  
-  button {
-	width: 24vw;
-    height: 8.7vw;
-	margin-top: 4vw;
-    margin-left: 23vw;
-    font-size: 3.6vw;
-	border-radius: 6.1vw;
+	height: 94px;
   }
 }

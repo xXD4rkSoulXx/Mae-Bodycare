@@ -1,62 +1,123 @@
 .forth-section h1 {
-  position: Absolute;
-  top: 287vw;
-  left: 4.8vw;
+  position: Relative;
+  top: -150px;
+}
+
+.forth-section .news-zone {
+  max-width: 100%;
+  width: 1750px;
+  min-height: 800px;
+  margin: Auto;
 }
 
 .forth-section .products-list {
-  margin-top: 4.7vw;
-  margin-left: 5.1vw;
   display: Flex;
-  flex-diretion: Row;
   flex-wrap: Wrap;
-  gap: 2.2vw;
+  gap: 42px;
 }
 
 .forth-section img {
-  width: 20.8vw;
+  width: 398px;
   height: Auto;
 }
 
 .forth-section p {
-  font-size: 0.8vw;
   position: Relative;
-  left: 1vw;
-  bottom: 2vw;
+  left: 20px;
+  bottom: 35px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1919px) {
   .forth-section h1 {
-	top: 669vw;
+    top: -75px;
+  }
+  
+  .forth-section .news-zone {
+    width: 1600px;
   }
   
   .forth-section .products-list {
-    margin-top: 11.8vw;
+    gap: 20px;
   }
   
   .forth-section img {
-    width: 28.4vw;
+    width: 300px;
   }
   
   .forth-section p {
-	font-size: 1.4vw;
-	bottom: 3vw;
+	font-size: 12px;
+	left: 10px;
+	bottom: 26px;
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 1660px) {
+  .forth-section .news-zone {
+    width: 1270px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .forth-section .news-zone {
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .forth-section .news-zone {
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 949px) {
   .forth-section h1 {
-	top: 1185vw;
+	top: -70px;
+  }
+  
+  .forth-section .news-zone {
+    width: 800px;
   }
   
   .forth-section img {
-    width: 43.5vw;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .forth-section .news-zone {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .forth-section h1 {
+	top: -40px;
+  }
+  
+  .forth-section .products-list {
+    gap: 10px;
+  }
+  
+  .forth-section img {
+    width: 170px;
   }
   
   .forth-section p {
-	width: 42vw; 
+	width: 160px; 
 	font-weight: 500;
-	font-size: 3vw;
-	bottom: 6vw;
+	font-size: 12px;
+	bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .forth-section .news-zone {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .forth-section .news-zone {
+    width: 200px;
   }
 }

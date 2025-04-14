@@ -1,13 +1,16 @@
 footer {
-  width: 100vw;
-  height: 8.5vw;
-  margin-top: 5.8vw;
-  padding-top: 1.7vw;
-  color: #2E606F;
-  font-size: 0.73vw;
+  width: 100%;
+  height: 164px;
+  margin-top: 50px;
+  padding: 32px 0;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   background-color: White;
+  color: #2E606F;
+  display: Flex;
+  justify-content: Center;
+  gap: 72px;
 }
 
 footer a {
@@ -15,40 +18,22 @@ footer a {
   color: #2E606F;
 }
 
-.row {
+.col {
   display: Flex;
-  flex-direction: Row;
-  justify-content: Center;
-  gap: 3.75vw;
+  flex-direction: Column;
+  gap: 20px;
 }
 
-.row:last-child {
-  margin-top: 0.7vw;
-  font-size: 0.6vw;
-  gap: 24vw;
-}
-
-.row:last-child img {
-  width: 6.15vw;
-  height: Auto;
-}
-
-.col:first-child {
-  width: 16.2vw;
-}
-
-.col:last-child {
-  width: 7.4vw;
-  text-align: Center;
-}
-
-.col .title {
+.col p:first-child {
   font-weight: 400;
+}
+
+.col:last-child a {
+  align-self: Flex-End;
 }
 
 .col .contact {
   text-decoration: Underline;
-  margin-top: 1vw;
   font-weight: 400;
 }
 
@@ -57,93 +42,89 @@ footer a {
 }
 
 .social-media {
-  margin-top: 0.7vw;
   display: Flex;
-  flex-direction: Row;
-  justify-content: Space-Between;
+  flex-direction: Column;
   align-items: Center;
+  gap: 13px;
 }
 
-.social-media img {
-  width: 1.48vw;
-  height: Auto;
+.social-media p:last-child {
+  display: None;
 }
 
-@media screen and (max-width: 1024px) {
+.social-media-icons {
+  display: Flex;
+  gap: 28px;
+}
+
+.social-media-icons a:nth-child(2) {
+  align-self: Center;
+}
+
+@media screen and (max-width: 1919px) {
   footer {
-	height: 20vw;
-	margin-top: 14.6vw;
-	padding: 4vw 4.8vw;
-	font-size: 1.7vw;
+    font-size: 12px;
+    gap: 50px;
   }
   
-  .row {
-	justify-content: Space-Between;
-  }
-  
-  .row:last-child {
-    margin-top: 1.7vw;
-    font-size: 1.5vw;
-  }
-  
-  .row:last-child img {
-    width: 13.3vw;
-  }
-  
-  .col:first-child {
-    width: 30.4vw;
-  }
-  
-  .col:last-child {
-    width: 17.3vw;
-  }
-  
-  .social-media img {
-    width: 3.5vw;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  footer {
-	height: 93vw;
-	margin-top: 125.2vw;
-	font-size: 3.6vw;
-  }
-  
-  .row {
-	flex-direction: Column;
-  }
-  
-  .row:last-child {
-	margin-top: 2vw;
-	font-size: 3vw;
-	gap: 3vw;
-  }
-  
-  .row:last-child img {
-    width: 30vw;
-  }
-  
-  .col:first-child {
-    width: 63.4vw;
-  }
-  
-  .col:last-child {
-	width: 36.1vw;
-	margin-top: 7.6vw;
-    text-align: Left;
-  }
-  
-  .col .contact {
-	margin-top: -11vw;
-	margin-left: 40.7vw;
+  .col {
+    gap: 15px;
   }
   
   .social-media {
-    margin-top: 2.3vw;
+    gap: 10px;
   }
   
-  .social-media img {
-    width: 7.2vw;
+  .social-media-icons {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  footer {
+	font-size: 14px;
+	gap: 20px;
+  }
+  
+  .social-media-icons {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  footer {
+	height: 365px;
+	padding: 26px;
+	flex-direction: Column;
+  }
+  
+  .col {
+    gap: 0px;
+  }
+  
+  .col:last-child {
+    gap: 20px;
+  }
+  
+  .direitos {
+    display: None;
+  }
+  
+  .col .contact {
+	margin-top: -42px;
+    margin-left: 150px;
+  }
+  
+  .col:last-child a {
+    align-self: Center;
+  }
+  
+  .social-media {
+	margin-top: 20px;
+    align-items: Flex-Start;
+  }
+  
+  .social-media p:last-child {
+    display: Block;
   }
 }
